@@ -1,5 +1,5 @@
-/*Análise da vairiavel  de data da base de cadastro de produto*/
-/*CHECAR A E CORRIGIR VARIAVEL DATA*/
+/*Análise da variavel  de data da base de cadastro de produto*/
+/*CHECAR  E CORRIGIR VARIAVEL DATA*/
 
 /*Checa se existem datas são preenchidas*/
 PROC FREQ
@@ -32,7 +32,7 @@ IF data = . and nome = "Soccer" THEN data = 201709;
 RUN;
 
 
-/* Igual a condição acima, porém aqui ja desclaramos o IF do data = . antes para todas as outras*/
+/* Igual a condição acima, porém aqui ja declaramos o IF do data = . antes para todas as outras*/
 DATA teste2;
 set alura.cadastro_produto_v2;
 
